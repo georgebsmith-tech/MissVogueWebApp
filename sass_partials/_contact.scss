@@ -1,0 +1,32 @@
+.Contact-form{
+    input,textarea{
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 8px;
+        background: rgb(182, 180, 180);
+        color: rgb(20, 20, 20);
+        border-radius: 4px;
+    }
+    input{
+        padding: 8px;
+    }
+    button{
+        padding: 5px 15px;
+        text-transform: uppercase;
+        color: rgb(85, 84, 84);
+    }
+
+}
+.contact-info{
+    padding: 5px 15px;
+    font-size: 1rem;
+}
+
+
+.contact-sub{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}

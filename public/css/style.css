@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #a7a4a4;
+  line-height: 1.6;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  padding: 15px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.read-more {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  color: #f1f0f0;
+  background: #4e4e4e;
+}
+
+a {
+  text-decoration: none;
+}
+
+.welcome-section {
+  background: #303030;
+  padding-top: 30px;
+}
+.welcome-section p {
+  font-size: 1.6rem;
+  padding: 10px 25px;
+}
+
+.welcome {
+  color: #a7a4a4;
+  font-size: 1.6rem;
+}
+
+.brand-name {
+  color: gold;
+  font-size: 2.5rem;
+  border-bottom: 2px solid grey;
+  padding-bottom: 10px;
+  margin: 5px 25px;
+}
+
+.read-more-container {
+  padding-top: 25px;
+}
+
+.social-media {
+  background: #303030;
+  padding-top: 20px;
+}
+.social-media > div {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding: 20px 80px;
+}
+.social-media i {
+  color: white;
+  width: 40px;
+  height: 40px;
+  background: #272626;
+  text-align: center;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.our-model {
+  display: flex;
+  justify-content: center;
+  background: black;
+  padding: 0px 15px;
+}
+.our-model img {
+  display: block;
+  width: 100%;
+}
+
+.load-more {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.load-more h3 {
+  color: #cccaca;
+  border-left: 4px solid gold;
+  margin: 10px 35px;
+}
+
+.about-pageant {
+  background: #303030;
+  padding-bottom: 20px;
+}
+.about-pageant p {
+  font-size: 1.5rem;
+  padding: 10px 15px;
+}
+
+.button {
+  padding: 10px 20px;
+  display: block;
+  background: gold;
+  width: fit-content;
+  text-transform: uppercase;
+  margin: 10px auto;
+  color: #908e8e;
+  font-size: 1.6rem;
+  border-radius: 6px;
+}
+
+.testimonies {
+  background: gold;
+}
+.testimonies article {
+  padding: 10px 15px;
+  font-size: 1.6rem;
+}
+
+.quote {
+  font-size: 8rem;
+}
+.quote i {
+  color: #302f2f;
+}
+
+.by {
+  font-size: 1.5rem;
+}
+.by span:first-child {
+  color: #3b3a3a;
+}
+
+.Contact-form input, .Contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 8px;
+  background: #b6b4b4;
+  color: #141414;
+  border-radius: 4px;
+}
+.Contact-form input {
+  padding: 8px;
+}
+.Contact-form button {
+  padding: 5px 15px;
+  text-transform: uppercase;
+  color: #555454;
+}
+
+.contact-info {
+  padding: 5px 15px;
+  font-size: 1rem;
+}
+
+.contact-sub {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 10px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-color: gold;
+}
+.top-header i {
+  font-size: 1.3rem;
+  padding: 5px;
+  border-radius: 3px;
+}
+.top-header h2 {
+  font-size: 1.8rem;
+}
+
+.banner {
+  min-height: 30vh;
+  background: #303030;
+  background: gold;
+}
+
+footer {
+  height: 60vh;
+}
+
+/*# sourceMappingURL=style.css.map */

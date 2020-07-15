@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(167, 164, 164);
+    line-height: 1.6;
+}
+
+html{
+    font-size: 10px;
+}
+
+.container{
+    padding: 15px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.read-more{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    color: rgb(241, 240, 240);
+    background: rgb(78, 78, 78);
+}
+
+a{
+    text-decoration: none;
+}

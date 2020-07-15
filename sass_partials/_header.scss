@@ -1,0 +1,30 @@
+$primary-color-1:gold;
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background-color: $primary-color-1;
+    i{
+        font-size: 1.3rem;
+        // background: red;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+}
+
+.banner{
+    min-height: 30vh;
+    background: #303030;
+    background: $primary-color-1;
+    // background: url(../images/background.jpg);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+}
+
+

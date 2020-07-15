@@ -1,0 +1,122 @@
+$primary-color-1:gold;
+$primary-color-2:#303030;
+
+.welcome-section{
+    background: $primary-color-2;
+    padding-top: 30px;
+    p{
+        font-size: 1.6rem;
+        padding:10px 25px ;
+    }
+}
+.welcome{
+    color: rgb(167, 164, 164);
+    font-size: 1.6rem;
+}
+
+.brand-name{
+    color: $primary-color-1;
+    font-size: 2.5rem;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    margin: 5px 25px;
+}
+.read-more-container{
+    padding-top: 25px;
+}
+
+.social-media{
+    background: $primary-color-2;
+    padding-top: 20px;
+    &>div{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+        padding: 20px 80px;
+    }
+    i{
+        color: white;
+        // margin-right: 15px;
+        width: 40px;
+        height: 40px;
+        background: rgb(39, 38, 38);
+        text-align: center;
+        display: flex;
+        font-size: 1.6rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+
+    }
+}
+
+.our-model{
+    display: flex;
+    justify-content: center;
+
+    background: black;
+    padding: 0px 15px;
+    img{
+        display: block;
+        width: 100%;
+        
+    }
+}
+
+.load-more{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    h3{
+        color: rgb(204, 202, 202);
+        border-left: 4px solid $primary-color-1;
+        margin:10px 35px;
+    }
+    
+}
+
+.about-pageant{
+    background: $primary-color-2;
+    padding-bottom: 20px;
+    p{
+        font-size: 1.5rem;
+        padding: 10px 15px;
+    }
+}
+
+.button{
+    padding: 10px 20px;
+    display: block;
+    background: $primary-color-1;
+    width: fit-content;
+    text-transform: uppercase;
+    margin: 10px auto;
+    color: rgb(144, 142, 142);
+    font-size: 1.6rem;
+    border-radius: 6px;
+}
+
+.testimonies{
+    // height: 50vh;
+    background: rgb(255, 215, 0);
+    article{
+        padding: 10px 15px;
+        font-size: 1.6rem;
+    }
+    
+}
+
+.quote{
+    font-size: 8rem;
+    i{
+        color: rgb(48, 47, 47);
+    }
+    
+}
+
+.by{
+    span:first-child{
+        color: rgb(59, 58, 58);
+    }
+    font-size: 1.5rem;
+    
+}
