@@ -1,3 +1,27 @@
+$primary-color-1:gold;
+$primary-color-2:#303030;
+
 footer{
-    height: 60vh;
+    padding: 20px 0px;
+    font-size: 1.6rem;
+    background: rgb(34, 34, 34);
+
+    
+    .explore{
+        text-transform: uppercase;
+        font-size: 1.3rem;
+    }
+    li{
+        margin-bottom: 5px;
+    }
+    i{
+        margin-left: 7px;
+        color: $primary-color-1;
+        padding-right: 8px;
+    }
+
+    .rights{
+        background: black;
+        padding: 15px 10px;
+    }
 }
