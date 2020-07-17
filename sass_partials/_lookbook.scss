@@ -1,0 +1,25 @@
+
+$primary-color-1:gold;
+$primary-color-2:#303030;
+.lookbook{
+    background: $primary-color-2;
+    padding: 10px;
+    width: 100vw; 
+    img{
+        width: 100%;
+    } 
+    
+}
+
+.lookbook-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 9px;
+    row-gap: 3px;
+    .lookbook-image-wrapper{
+        max-height: 100px;
+        border-radius: 2px;
+        // background: black;
+        overflow: hidden;
+    }
+}

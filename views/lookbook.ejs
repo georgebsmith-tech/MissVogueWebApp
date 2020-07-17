@@ -1,0 +1,20 @@
+<%- include('./partials/head.ejs') %>
+<%- include('./partials/header.ejs') %>
+<main>
+    <section class="lookbook">
+        <h1 class="center-text brand-name upper">Look Book</h1>
+        <div class="lookbook-container">
+            <div class="lookbook-image-wrapper">
+                <img src="../images/lookbook1.jpg" alt="">
+            </div>
+            <% for(let i=1;i<=14;i++){ %>
+            <div class="lookbook-image-wrapper">
+                <img src="../images/pic<%= i %>.jpg" alt="">
+            </div>
+            <% } %>
+        </div>
+    </section>
+
+</main>
+
+<%- include('./partials/footer.ejs') %>

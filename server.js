@@ -21,6 +21,9 @@ app.get("/contact", (req, res) => {
 app.get("/models", (req, res) => {
     res.render("models")
 })
+app.get("/lookbook", (req, res) => {
+    res.render("lookbook")
+})
 
 
 const PORT = process.env.PORT || 8000

@@ -312,4 +312,25 @@ footer .rights {
   visibility: hidden;
 }
 
+.lookbook {
+  background: #303030;
+  padding: 10px;
+  width: 100vw;
+}
+.lookbook img {
+  width: 100%;
+}
+
+.lookbook-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 9px;
+  row-gap: 3px;
+}
+.lookbook-container .lookbook-image-wrapper {
+  max-height: 100px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=style.css.map */
