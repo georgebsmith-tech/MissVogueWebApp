@@ -1,12 +1,18 @@
 $primary-color-1:gold;
 $primary-color-2:#303030;
 
+main{
+padding-top: 50px;
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     color: rgb(167, 164, 164);
     line-height: 1.6;
+}
+body{
+   font-family:'Open Sans', sans-serif;
 }
 
 html{

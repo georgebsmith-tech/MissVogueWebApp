@@ -1,9 +1,17 @@
+main {
+  padding-top: 50px;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   color: #a7a4a4;
   line-height: 1.6;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 html {
@@ -199,7 +207,8 @@ ul {
   background-color: gold;
 }
 .top-header i {
-  font-size: 1.3rem;
+  font-size: 2rem;
+  color: #252525;
   padding: 5px;
   border-radius: 3px;
 }
@@ -207,9 +216,11 @@ ul {
   font-size: 1.8rem;
 }
 
+.logo {
+  color: black;
+}
+
 .banner {
-  min-height: 30vh;
-  background: #303030;
   background: gold;
 }
 
@@ -233,6 +244,72 @@ footer i {
 footer .rights {
   background: black;
   padding: 15px 10px;
+}
+
+.header {
+  position: fixed;
+  z-index: 15;
+}
+
+.primary-nav {
+  padding-top: 15px;
+  font-size: 1.6rem;
+  background: #303030;
+  height: 90vh;
+  width: 70vw;
+  transform: translateX(-100%);
+  position: absolute;
+}
+.primary-nav a {
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  display: grid;
+  font-weight: bold;
+}
+
+.models {
+  padding: 20px 10px;
+  background: #303030;
+  width: 100vw;
+}
+.models .image-wrapper {
+  position: relative;
+  width: 100%;
+}
+.models .image-wrapper img {
+  width: 100%;
+}
+.models .image-wrapper .top-model-details {
+  width: 100%;
+  position: absolute;
+  font-size: 2rem;
+  text-transform: uppercase;
+  z-index: 10;
+  bottom: 0px;
+  padding: 12px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-left: 4px solid gold;
+}
+.models .image-wrapper .top-model-details .name {
+  color: white;
+}
+.models .image-wrapper .top-model-details .more {
+  font-size: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.models .image-wrapper .top-model-details .more > div {
+  margin-right: 14px;
+  text-transform: capitalize;
+}
+.models .image-wrapper .top-model-details div {
+  color: white;
+}
+
+.top-model-details .more {
+  height: 0;
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

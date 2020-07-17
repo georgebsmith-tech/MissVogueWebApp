@@ -7,8 +7,8 @@ $primary-color-1:gold;
     width: 100vw;
     background-color: $primary-color-1;
     i{
-        font-size: 1.3rem;
-        // background: red;
+        font-size: 2rem;
+        color: rgb(37, 37, 37);
         padding: 5px;
         border-radius: 3px;
     }
@@ -17,9 +17,14 @@ $primary-color-1:gold;
     }
 }
 
+.logo{
+    color: black;
+}
+
+
 .banner{
-    min-height: 30vh;
-    background: #303030;
+    // min-height: 30vh;
+    // background: #303030;
     background: $primary-color-1;
     // background: url(../images/background.jpg);
     // background-repeat: no-repeat;

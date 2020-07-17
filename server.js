@@ -18,6 +18,10 @@ app.get("/contact", (req, res) => {
     res.render("contact")
 })
 
+app.get("/models", (req, res) => {
+    res.render("models")
+})
+
 
 const PORT = process.env.PORT || 8000
 

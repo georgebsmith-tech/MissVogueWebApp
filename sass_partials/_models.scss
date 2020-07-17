@@ -1,0 +1,47 @@
+$primary-color-1:gold;
+$primary-color-2:#303030;
+.models{
+    padding: 20px 10px;
+    background: $primary-color-2;
+    width: 100vw;
+    
+    .image-wrapper{
+        position: relative;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+        .top-model-details{
+            width: 100%;
+            position: absolute;
+            font-size: 2rem;
+            text-transform: uppercase;
+            z-index: 10;
+            bottom: 0px;
+            padding: 12px 20px;
+            background: rgb(0, 0, 0,0.6);
+            // background: black;
+            border-left: 4px solid $primary-color-1;
+            .name{
+                color: white;
+            }
+            .more{
+                font-size: 1.4rem;
+                display: flex;
+                flex-wrap: wrap;
+                &>div{
+                    margin-right: 14px;
+                    text-transform: capitalize;
+                }
+            }
+            div{
+                color: white;
+            }
+        }
+    }
+}
+
+.top-model-details .more{
+    height: 0;
+    visibility: hidden;
+}

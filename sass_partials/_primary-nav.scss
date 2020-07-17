@@ -1,0 +1,26 @@
+$primary-color-1:gold;
+$primary-color-2:#303030;
+.header{
+    position: fixed;
+    z-index: 15;
+}
+
+.primary-nav{
+    padding-top: 15px;
+    font-size: 1.6rem;
+    background: $primary-color-2;
+    height: 90vh;
+    width: 70vw;
+    transform: translateX(-100%);
+    position: absolute;
+    a{
+        color: white;
+        text-transform: uppercase;
+        padding: 5px 15px;
+        display: grid;
+        font-weight: bold;
+    }
+    
+}
+
+
