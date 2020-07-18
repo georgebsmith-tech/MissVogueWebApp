@@ -2,6 +2,43 @@ main {
   padding-top: 50px;
 }
 
+.landing-banner {
+  margin-top: -50px;
+  min-height: 34vh;
+  background-image: url(../images/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100vw;
+  z-index: -2;
+}
+
+.landing-CTA {
+  position: relative;
+  font-size: 1.2rem;
+  width: 60vw;
+}
+.landing-CTA p {
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 7px 7px 0px 7px;
+}
+.landing-CTA span {
+  text-transform: uppercase;
+  color: gold;
+}
+.landing-CTA a {
+  text-transform: uppercase;
+  padding: 5px 10px;
+  background: gold;
+  display: block;
+  margin-top: 7px;
+  width: fit-content;
+  color: #1a1919;
+  font-weight: bold;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -205,10 +242,12 @@ ul {
   align-items: center;
   width: 100vw;
   background-color: gold;
+  background: transparent;
 }
 .top-header i {
   font-size: 2rem;
   color: #252525;
+  color: gold;
   padding: 5px;
   border-radius: 3px;
 }
@@ -217,11 +256,14 @@ ul {
 }
 
 .logo {
-  color: black;
+  color: gold;
 }
 
 .banner {
-  background: gold;
+  background: transparent;
+}
+.banner selection {
+  background: transparent;
 }
 
 footer {
@@ -331,6 +373,17 @@ footer .rights {
   max-height: 100px;
   border-radius: 2px;
   overflow: hidden;
+}
+
+.about {
+  background: #303030;
+  font-size: 1.6rem;
+}
+.about h2 {
+  padding: 3px 15px;
+  border-left: 3px solid gold;
+  margin-bottom: 9px;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */

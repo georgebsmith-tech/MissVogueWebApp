@@ -4,6 +4,48 @@ $primary-color-2:#303030;
 main{
 padding-top: 50px;
 }
+
+
+.landing-banner{
+    margin-top: -50px;
+    min-height:34vh ;
+    background-image: url(../images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100vw;
+    z-index: -2;
+    
+    
+}
+
+.landing-CTA{
+    position: relative;
+    // margin-top: 5vh;
+    font-size: 1.2rem;
+    width: 60vw;
+    p{
+        color: white;
+        background: rgba(0, 0, 0,0.3);
+        padding: 7px 7px 0px 7px;
+    }
+    
+    span{
+        text-transform: uppercase;
+        color: $primary-color-1;
+    }
+    a{
+        text-transform: uppercase;
+        padding: 5px 10px;
+        background: $primary-color-1;
+        display: block;
+        margin-top: 7px;
+        width: fit-content;
+        color:rgb(26, 25, 25);
+        font-weight: bold;
+    }
+}
 *{
     padding: 0;
     margin: 0;
