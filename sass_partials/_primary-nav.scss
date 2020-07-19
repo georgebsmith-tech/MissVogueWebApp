@@ -41,6 +41,12 @@ $primary-color-2:#303030;
     border-radius: 3px;
     color: $primary-color-2;
     padding: 6px 8px;
+    transition: 1s;
+    &:hover{
+        color: black;
+        font-weight: bolder;
+        transform: scale(1.2);
+    }
 }
 
 

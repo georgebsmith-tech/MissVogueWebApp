@@ -3,6 +3,9 @@ $primary-color-2:#303030;
 
 
 @media only screen and(min-width:769px){
+
+    
+
     footer>section>section{
         display: grid;
         grid-template-columns: 1.6fr repeat(3,1fr);
@@ -52,7 +55,16 @@ $primary-color-2:#303030;
         margin-top: 70vh;
     }
     .landing-CTA{
-        top:50vh;
+        top:35vh;
+        p{
+            font-size: 3rem;
+            background: transparent;
+        }
+        a{
+            font-size: 2.6rem;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
     }
     .toggle-menu{
         display: none;

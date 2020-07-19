@@ -45,13 +45,14 @@ $primary-color-2:#303030;
     }
     a{
         text-transform: uppercase;
-        padding: 5px 10px;
+        padding: 5px 20px;
         background: $primary-color-1;
         display: block;
         margin-top: 7px;
         width: fit-content;
         color:rgb(26, 25, 25);
         font-weight: bold;
+        border-radius: 5px;
     }
 }
 *{

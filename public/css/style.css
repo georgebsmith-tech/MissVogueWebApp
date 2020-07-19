@@ -34,13 +34,14 @@
 }
 .landing-CTA a {
   text-transform: uppercase;
-  padding: 5px 10px;
+  padding: 5px 20px;
   background: gold;
   display: block;
   margin-top: 7px;
   width: fit-content;
   color: #1a1919;
   font-weight: bold;
+  border-radius: 5px;
 }
 
 * {
@@ -338,6 +339,12 @@ footer .rights {
   border-radius: 3px;
   color: #303030;
   padding: 6px 8px;
+  transition: 1s;
+}
+#urgent:hover {
+  color: black;
+  font-weight: bolder;
+  transform: scale(1.2);
 }
 
 .models {
@@ -471,7 +478,16 @@ footer .rights {
   }
 
   .landing-CTA {
-    top: 50vh;
+    top: 35vh;
+  }
+  .landing-CTA p {
+    font-size: 3rem;
+    background: transparent;
+  }
+  .landing-CTA a {
+    font-size: 2.6rem;
+    margin-top: 40px;
+    margin-left: 40px;
   }
 
   .toggle-menu {
