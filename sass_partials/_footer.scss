@@ -2,9 +2,17 @@ $primary-color-1:gold;
 $primary-color-2:#303030;
 
 footer{
-    padding: 20px 0px;
-    font-size: 1.6rem;
+    padding: 20px 0px 0px 0px;
+    font-size: 1.5rem;
     background: rgb(34, 34, 34);
+    .brand-name{
+        // padding-top: 0px;
+        margin-top: -15px;
+        margin-bottom: 20px;
+    }
+    .sub-heading{
+        margin-bottom: 30px;
+    }
 
     
     .explore{
@@ -12,7 +20,7 @@ footer{
         font-size: 1.3rem;
     }
     li{
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
     i{
         margin-left: 7px;

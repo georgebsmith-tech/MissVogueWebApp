@@ -1,14 +1,17 @@
 $primary-color-1:gold;
 $primary-color-2:#303030;
 
-main{
-padding-top: 50px;
+// main{
+// padding-top: 50px;
+// }
+
+.hide{
+    display: none;
 }
 
 
 .landing-banner{
-    margin-top: -50px;
-    min-height:34vh ;
+    min-height:50vh ;
     background-image: url(../images/banner2.jpg);
     background-position: center;
     background-size: cover;
@@ -20,9 +23,14 @@ padding-top: 50px;
     
 }
 
+.main-content{
+    margin-top: 60px;
+}
+
 .landing-CTA{
+    top: 60px;
     position: relative;
-    // margin-top: 5vh;
+    // margin-top: 40px;
     font-size: 1.2rem;
     width: 60vw;
     p{

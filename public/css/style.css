@@ -1,10 +1,9 @@
-main {
-  padding-top: 50px;
+.hide {
+  display: none;
 }
 
 .landing-banner {
-  margin-top: -50px;
-  min-height: 34vh;
+  min-height: 50vh;
   background-image: url(../images/banner2.jpg);
   background-position: center;
   background-size: cover;
@@ -14,7 +13,12 @@ main {
   z-index: -2;
 }
 
+.main-content {
+  margin-top: 60px;
+}
+
 .landing-CTA {
+  top: 60px;
   position: relative;
   font-size: 1.2rem;
   width: 60vw;
@@ -267,16 +271,23 @@ ul {
 }
 
 footer {
-  padding: 20px 0px;
-  font-size: 1.6rem;
+  padding: 20px 0px 0px 0px;
+  font-size: 1.5rem;
   background: #222222;
+}
+footer .brand-name {
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+footer .sub-heading {
+  margin-bottom: 30px;
 }
 footer .explore {
   text-transform: uppercase;
   font-size: 1.3rem;
 }
 footer li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 footer i {
   margin-left: 7px;
@@ -384,6 +395,22 @@ footer .rights {
   border-left: 3px solid gold;
   margin-bottom: 9px;
   text-transform: capitalize;
+  color: gold;
+}
+
+@media only screen and (min-width: 769px) {
+  footer > section > section {
+    display: grid;
+    grid-template-columns: 1.6fr repeat(3, 1fr);
+    column-gap: 15px;
+  }
+
+  footer > section {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
