@@ -6,21 +6,41 @@ $primary-color-2:#303030;
 }
 
 .primary-nav{
-    padding-top: 15px;
+    padding: 20px 0px;
     font-size: 1.6rem;
     background: $primary-color-2;
     height: 90vh;
     width: 70vw;
     transform: translateX(-100%);
     position: absolute;
+    li{
+        margin-bottom: 10px;
+        margin-right: 15px;
+    }
     a{
-        color: white;
+        color: rgb(139, 138, 138);
+
         text-transform: uppercase;
-        padding: 5px 15px;
-        display: grid;
+        margin-left: 10px;
+        // padding:;
         font-weight: bold;
+        display: inline-block;
+        padding: 6px 0px;
+        border-bottom: 1px solid transparent;
+        // text-decoration: underline;
+        &:hover{
+            color:white;
+            border-bottom: 1px solid $primary-color-1;
+        }
     }
     
+}
+
+#urgent{
+    background: $primary-color-1;
+    border-radius: 3px;
+    color: $primary-color-2;
+    padding: 6px 8px;
 }
 
 

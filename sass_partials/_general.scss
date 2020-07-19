@@ -105,3 +105,8 @@ a{
 ul{
     list-style-type: none;
 }
+
+#active-menu{
+    color:white;
+    border-bottom: 1px solid $primary-color-1;
+}

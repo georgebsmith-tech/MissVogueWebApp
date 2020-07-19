@@ -16,4 +16,46 @@ $primary-color-2:#303030;
         
     }
 
+    .primary-nav{
+        transform: translateX(0);
+        position: static;
+        height: fit-content;
+        width: fit-content;
+        background: transparent;
+        &>ul{
+            display: flex;
+            a{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .primary-nav-container{
+        height: fit-content;
+    }
+    .banner{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        padding: 0px 70px;
+    }
+    .top-header{
+        width: fit-content;
+    }
+
+    .landing-banner{
+        min-height: 120vh;
+    }
+    .main-content{
+        margin-top: 70vh;
+    }
+    .landing-CTA{
+        top:50vh;
+    }
+    .toggle-menu{
+        display: none;
+    }
+
 }
