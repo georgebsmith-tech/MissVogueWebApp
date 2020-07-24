@@ -1,9 +1,15 @@
 const express = require("express")
 const app = express()
 
+const adminRoutes = require("./controlers/adminRoutes");
+
 
 app.set("view engine", "ejs")
 app.set("views", "./views")
+
+
+app.use(express.urlencoded({ extended: false }))
+app.use(express.json())
 
 app.use(express.static("public"))
 app.use("/css", express.static("/public/css"))
@@ -31,6 +37,9 @@ app.get("/lookbook", (req, res) => {
 app.get("/votes", (req, res) => {
     res.render("votes")
 })
+
+
+app.use("/admin", adminRoutes)
 
 
 const PORT = process.env.PORT || 8000

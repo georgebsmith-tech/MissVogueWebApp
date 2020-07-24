@@ -50,6 +50,7 @@
   box-sizing: border-box;
   color: #a7a4a4;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 body {
@@ -246,6 +247,10 @@ ul {
   font-size: 1.3rem;
 }
 
+.contact-page .landing-banner {
+  background-image: url(../images/banner1.jpg);
+}
+
 .top-header {
   display: flex;
   justify-content: space-between;
@@ -275,7 +280,7 @@ ul {
 
 footer {
   padding: 20px 0px 0px 0px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   background: #222222;
 }
 footer .brand-name {
@@ -328,6 +333,7 @@ footer .rights {
   display: inline-block;
   padding: 6px 0px;
   border-bottom: 1px solid transparent;
+  transition: 1s;
 }
 .primary-nav a:hover {
   color: white;
@@ -414,7 +420,7 @@ footer .rights {
 
 .about {
   background: #303030;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 .about h2 {
   padding: 3px 15px;
@@ -492,6 +498,52 @@ footer .rights {
 
   .toggle-menu {
     display: none;
+  }
+
+  .the-models {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  .models .image-wrapper {
+    width: 100%;
+  }
+  .models .image-wrapper img {
+    width: 100%;
+  }
+
+  .lookbook-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .lookbook-container .lookbook-image-wrapper {
+    max-height: 400px;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+
+  .our-model > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  .about {
+    padding: 40px 250px;
+  }
+
+  .contact-sub {
+    column-gap: 7px;
+    grid-template-columns: 1fr 6fr;
+  }
+
+  .contact-info > div {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .form-and-pic {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 20px;
   }
 }
 

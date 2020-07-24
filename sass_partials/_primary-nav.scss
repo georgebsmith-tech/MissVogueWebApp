@@ -28,9 +28,11 @@ $primary-color-2:#303030;
         padding: 6px 0px;
         border-bottom: 1px solid transparent;
         // text-decoration: underline;
+        transition: 1s;
         &:hover{
             color:white;
             border-bottom: 1px solid $primary-color-1;
+        
         }
     }
     

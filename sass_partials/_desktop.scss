@@ -70,4 +70,62 @@ $primary-color-2:#303030;
         display: none;
     }
 
+
+    .the-models{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+        // grid-template-rows: 400px;
+        // column-gap: 10px;
+        // row-gap: 10px;
+    }
+    .models{
+        .image-wrapper{
+            width: 100%;
+            img{
+                width:100%;
+            }
+        }
+    }
+
+    .lookbook-container{
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+        .lookbook-image-wrapper{
+            max-height: 400px;
+            border-radius: 0px;
+            // background: black;
+            overflow: hidden;
+        }
+
+    }
+
+    .our-model>div{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    }
+
+
+    .about{
+        padding: 40px 250px;
+    }
+
+    .contact-sub{
+        column-gap: 7px;
+        grid-template-columns: 1fr 6fr;
+    }
+    .contact-info{
+        &>div{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    .form-and-pic{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        column-gap: 20px;
+    }
+
+
+
+
 }
