@@ -1,0 +1,20 @@
+$primary-color-1:gold;
+$primary-color-2:#303030;
+
+.contestants{
+    width: 100vw;
+    background: $primary-color-2;
+
+}
+
+.contestants-wrapper{
+    .image-wrapper{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+

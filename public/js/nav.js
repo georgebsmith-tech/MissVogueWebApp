@@ -12,3 +12,5 @@ toggleNav.addEventListener("click", function (e) {
     toggleFlag = !toggleFlag
 
 })
+// console.log(toggleNav)
+// console.log(primaryNav)

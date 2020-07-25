@@ -50,7 +50,6 @@
   box-sizing: border-box;
   color: #a7a4a4;
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 body {
@@ -428,6 +427,18 @@ footer .rights {
   margin-bottom: 9px;
   text-transform: capitalize;
   color: gold;
+}
+
+.contestants {
+  width: 100vw;
+  background: #303030;
+}
+
+.contestants-wrapper .image-wrapper {
+  width: 100%;
+}
+.contestants-wrapper .image-wrapper img {
+  width: 100%;
 }
 
 @media only screen and (min-width: 769px) {

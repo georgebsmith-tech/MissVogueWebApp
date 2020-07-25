@@ -16,6 +16,18 @@
     <section class="main-content">
 
     </section>
+    <section class="contestants container">
+        <div class="contestants-wrapper">
+            <% contestants.forEach(contestant=>{ %>
+            <div class="image-wrapper">
+                <img src="../images/scroll2.jpeg" alt="">
+                <div>
+                    <span><%= contestant.votes %></span> Votes
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    </section>
 
 </main>
 

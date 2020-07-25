@@ -1,5 +1,7 @@
 const express = require("express")
 const app = express()
+const methodOverride = require("method-override")
+const ContestantsModel = require("./models/contestantsModel");
 
 const adminRoutes = require("./controlers/adminRoutes");
 
@@ -10,6 +12,8 @@ app.set("views", "./views")
 
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
+
+app.use(methodOverride("_method"))
 
 app.use(express.static("public"))
 app.use("/css", express.static("/public/css"))
@@ -34,8 +38,9 @@ app.get("/models", (req, res) => {
 app.get("/lookbook", (req, res) => {
     res.render("lookbook")
 })
-app.get("/votes", (req, res) => {
-    res.render("votes")
+app.get("/votes", async (req, res) => {
+    const contestants = await ContestantsModel.find()
+    res.render("votes", { contestants })
 })
 
 
