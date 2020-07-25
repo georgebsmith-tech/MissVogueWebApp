@@ -535,6 +535,7 @@ footer .rights {
   .our-model > div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    width: 100%;
   }
 
   .about {
@@ -555,6 +556,10 @@ footer .rights {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     column-gap: 20px;
+  }
+
+  .container {
+    padding: 10px 100px;
   }
 }
 

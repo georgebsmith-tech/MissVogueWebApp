@@ -101,6 +101,7 @@ $primary-color-2:#303030;
     .our-model>div{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+        width: 100%;
     }
 
 
@@ -126,6 +127,10 @@ $primary-color-2:#303030;
     }
 
 
+
+    .container{
+        padding: 10px 100px;
+    }
 
 
 }
