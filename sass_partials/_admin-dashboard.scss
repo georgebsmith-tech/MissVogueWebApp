@@ -1,0 +1,106 @@
+$primary-color-1:gold;
+$primary-color-2:#303030;
+$primary-color-3:#141414;
+
+
+.user-dashboard section{
+        background: $primary-color-3;
+        padding: 10px 15px;
+}
+.user-dashboard .container{
+   
+    .fa-users,.fa-star{
+        font-size: 2rem;
+        color: $primary-color-1;
+        width: 30px;
+        border:1px solid blue;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+    }
+    .fa-star{
+        border:1px solid $primary-color-1;
+        color: $primary-color-1;
+        // font-size: 2;
+    }
+    
+
+    background: $primary-color-3;
+
+    &>div{
+        height: 80px;
+        background: rgb(59, 59, 59);
+        box-shadow: 2px 2px 2px 3px rgba(27, 27, 27, 0.4);
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+}
+
+.user-dashboard{
+    padding-bottom: 500px;
+}
+.user-dashboard-header{
+    // .avatar-wrapper{
+    //     background: red;
+    // }
+    // position: fixed;
+    padding: 6px 0px;
+    // width: 100vw;
+    .fa{
+        font-size: 1.6rem;
+        margin-right:16px;
+        &:hover{
+            cursor: pointer;
+            color: black;
+        }
+    }
+    // .fa-caret-down{
+    //     margin-right: 0px;
+    // }
+    .fa-user{
+        background: #f1f2f7;
+        padding: 6px 7px;
+        border-radius: 50px;
+        margin-right: 2px;
+    }
+    .quick-access{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(26, 25, 25);
+    }
+}
+.identity{
+    &:hover{
+        cursor: pointer;
+        color: $primary-color-1;
+    }
+}
+.user-nav{
+    background: $primary-color-2;
+    padding: 10px;
+    &>div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h2{
+        color: $primary-color-1;
+        font-size: 2rem;
+    }
+}
+
+.user-toggle{
+    padding: 4px;
+    &>div{
+        width: 20px;
+        padding: 1px;
+        background: $primary-color-1;
+        margin-top: 3px;
+    }
+}

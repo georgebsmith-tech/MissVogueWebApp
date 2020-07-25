@@ -1,15 +1,127 @@
 <%- include('./partials/head.ejs') %>
-<%- include('./partials/header.ejs') %>
-<main style="margin-top: 120px;">
+
+<header class="user-dashboard-header">
+    <nav class="user-nav">
+        <div>
+            <h2>Miss Vogue Nigeria</h2>
+            <div class="user-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+        <div>
+            <ul>
+
+            </ul>
+        </div>
+
+    </nav>
+    <section class="container quick-access">
+        <div>
+            <span>
+                <i class="fa fa-search"></i>
+            </span>
+            <span>
+                <i class="fa fa-bell"></i>
+            </span>
+            <span>
+                <i class="fa fa-envelope"></i>
+            </span>
+        </div>
+        <div>
+            <div class="identity">
+                <span class="avatar-wrapper">
+                    <i class="fa fa-user"></i>
+
+                </span>
+                <span>John Doe</span>
+            </div>
+
+        </div>
+    </section>
+
+</header>
+<main class="user-dashboard">
+    <section class="container">
+        <header>
+            <h2 class="dashboard">Dashboard</h2>
+            <div class="bread-crumbs"><a href="/">Dashboard</a></div>
+        </header>
+    </section>
+    <section class="container">
+        <div>
+
+
+            <div>
+                <h3>icon</h3>
+
+            </div>
+            <div>
+                Total Votes
+                <div><%= totalVotes %></div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div>
+
+
+            <div>
+                <i class="fa fa-star" aria-hidden="true"></i>
+
+            </div>
+            <div>
+                Number of contestants
+                <div><%= contestants.length %></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container">
+        <div>
+            <div>
+                <i class="fa fa-star" aria-hidden="true"></i>
+
+            </div>
+            <div>
+                Contestant wit highest vote
+                <div><%= contestants[0].name %></div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="contestants-details">
+        <div>
+            <% contestants.forEach(contestant=>{ %>
+            <div>
+                <div>
+
+                </div>
+                <div>
+                    <h3><a href="/admin/dashboard/contestants/<%= contestant._id %>">Name:
+                            <%= contestant.name %></a>
+                    </h3>
+                    <h3>State: <%= contestant.state %></h3>
+                    <h3>Votes: <%= contestant.votes %></h3>
+                </div>
+            </div>
+
+            <%})%>
+        </div>
+    </section>
+</main>
+
+</body>
+
+</html>
+<!-- <main style="margin-top: 120px;">
     <form action="/admin/dashboard/contestants?_method=PUT" method="POST">
         <input type="text" placeholder="Model id" name="id">
         <input type="number" placeholder="Number of votes" name="newVotes">
         <button type="submit">Add Vote</button>
     </form>
-</main>
-
-
-
-
-
-<%- include('./partials/footer.ejs') %>
+</main> -->

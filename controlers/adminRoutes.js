@@ -4,8 +4,14 @@ const ContestantsModel = require("../models/contestantsModel");
 
 
 router.get("/dashboard", async (req, res) => {
-    const contestants = await ContestantsModel.find()
-    res.render("dashboard", { contestants })
+    const contestants = await ContestantsModel.find().sort({ votes: -1 })
+    let totalVotes = 0;
+    contestants.forEach(contestant => {
+        totalVotes += contestant.votes
+        // votes.push(contestant.votes)
+    }),
+
+        res.render("dashboard", { contestants, totalVotes })
 })
 
 // router.get("/dashboard/contestants", (req, res) => {
@@ -32,6 +38,12 @@ router.put("/dashboard/contestants", async (req, res) => {
 router.get("/dashboard/contestants", async (req, res) => {
     const contestants = await ContestantsModel.find()
     res.status(200).json(contestants)
+
+})
+
+router.get("/dashboard/contestants/:id", async (req, res) => {
+    const contestant = await ContestantsModel.findOne({ _id: req.params.id })
+    res.status(200).json(contestant)
 
 })
 
