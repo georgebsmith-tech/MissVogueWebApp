@@ -43,73 +43,72 @@
     </section>
 
 </header>
+<section class="modal hide add-modal">
+    <div>
+        <header>
+            <h2>Add New Votes for contestant number ...</h2>
+        </header>
+        <main>
+            <form action="/admin/dashboard/contestants/<%= contestant._id %>?_method=PUT" method="POST">
+                <input type="number" placeholder="Number of votes" name="newVotes">
+                <button type="submit">Add Vote</button>
+            </form>
+        </main>
+        <section class="footer"></section>
+    </div>
+</section>
+<section class="modal hide sub-modal">
+    <div>
+        <header>
+            <h2>Remove Votes from contestant number ...</h2>
+        </header>
+        <main>
+            <form action="/admin/dashboard/contestants/<%= contestant._id %>?_method=PUT" method="POST">
+                <input type="hidden" name="operation" value="-1">
+                <input type="number" placeholder="Number of votes" name="newVotes">
+                <button type="submit">Remove Votes</button>
+            </form>
+        </main>
+        <section class="footer"></section>
+    </div>
+</section>
 <main class="user-dashboard">
+
     <section class="container">
         <header>
             <h2 class="dashboard">Dashboard</h2>
             <div class="bread-crumbs"><a href="/">Dashboard</a></div>
         </header>
     </section>
-    <section class="container">
-        <div>
 
-
-            <div>
-                <h3>icon</h3>
-
-            </div>
-            <div>
-                Total Votes
-                <div><%= totalVotes %></div>
-            </div>
-        </div>
-    </section>
-    <section class="container">
-        <div>
-
-
-            <div>
-                <i class="fa fa-star" aria-hidden="true"></i>
-
-            </div>
-            <div>
-                Number of contestants
-                <div><%= contestants.length %></div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="container">
-        <div>
-            <div>
-                <i class="fa fa-star" aria-hidden="true"></i>
-
-            </div>
-            <div>
-                Contestant wit highest vote
-                <div><%= contestants[0].name %></div>
-            </div>
-        </div>
-
-    </section>
     <section class="contestants-details">
         <div>
-            <% contestants.forEach(contestant=>{ %>
-            <div class="center-text contestant">
+            <div>
                 <div>
 
                 </div>
                 <div>
-                    <h3><a href="/admin/<%= contestant.name %>">Name:
-                            <%= contestant.name %></a>
+                    <h3>Name:
+                        <%= contestant.name %>
                     </h3>
                     <h3>State: <%= contestant.state %></h3>
                     <h3>Votes: <%= contestant.votes %></h3>
                 </div>
-            </div>
+                <div>
+                    <div>
 
-            <%})%>
+                        <i class="fa fa-pencil controls" title="Edit Contestant Profile"></i>
+                        <i class="controls fa fa-trash" title="Delete Contestant"></i>
+
+                    </div>
+                    <div>
+                        <i class="fa fa-plus controls" aria-hidden="true" class="Add Votes"></i>
+                        <i class="fa fa-minus controls" aria-hidden="true"></i>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 </main>
@@ -123,14 +122,10 @@
 
     </section>
 </footer>
-
+<script src="../js/contestants.js"></script>
 </body>
 
 </html>
 <!-- <main style="margin-top: 120px;">
-    <form action="/admin/dashboard/contestants?_method=PUT" method="POST">
-        <input type="text" placeholder="Model id" name="id">
-        <input type="number" placeholder="Number of votes" name="newVotes">
-        <button type="submit">Add Vote</button>
-    </form>
+  
 </main> -->

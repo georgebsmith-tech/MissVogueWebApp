@@ -41,9 +41,7 @@ $primary-color-3:#141414;
 
 }
 
-.user-dashboard{
-    padding-bottom: 500px;
-}
+
 .user-dashboard-header{
     // .avatar-wrapper{
     //     background: red;
@@ -103,4 +101,11 @@ $primary-color-3:#141414;
         background: $primary-color-1;
         margin-top: 3px;
     }
+}
+
+.contestant{
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    border-bottom: 1px solid $primary-color-1;
+    padding-bottom: 10px;
 }

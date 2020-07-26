@@ -1,0 +1,28 @@
+$primary-color-1:gold;
+$primary-color-2:#303030;
+$primary-color-3:#141414;
+
+.fa.controls{
+    padding:7px;
+    background: $primary-color-2;
+    margin-right: 5px;
+    // margin-bottom: 5px;
+    margin-top: 7px;
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+}
+.fa-plus.fa.controls,.fa-pencil.fa.controls{
+    background: $primary-color-1;
+    color: black;
+}
+
+.fa-minus.fa.controls,.fa-trash.fa.controls{
+    color: $primary-color-1;
+}
+
+
+

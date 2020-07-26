@@ -102,6 +102,22 @@ ul {
   border-bottom: 1px solid gold;
 }
 
+.modal {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
 .welcome-section {
   background: #303030;
   padding-top: 30px;
@@ -280,7 +296,7 @@ ul {
 footer {
   padding: 20px 0px 0px 0px;
   font-size: 1.2rem;
-  background: #222222;
+  background: #141414;
 }
 footer .brand-name {
   margin-top: -15px;
@@ -474,10 +490,6 @@ footer .rights {
   box-sizing: border-box;
 }
 
-.user-dashboard {
-  padding-bottom: 500px;
-}
-
 .user-dashboard-header {
   padding: 6px 0px;
 }
@@ -529,6 +541,34 @@ footer .rights {
   padding: 1px;
   background: gold;
   margin-top: 3px;
+}
+
+.contestant {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  border-bottom: 1px solid gold;
+  padding-bottom: 10px;
+}
+
+.fa.controls {
+  padding: 7px;
+  background: #303030;
+  margin-right: 5px;
+  margin-top: 7px;
+  transition: 0.5s;
+}
+.fa.controls:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.fa-plus.fa.controls, .fa-pencil.fa.controls {
+  background: gold;
+  color: black;
+}
+
+.fa-minus.fa.controls, .fa-trash.fa.controls {
+  color: gold;
 }
 
 @media only screen and (min-width: 769px) {

@@ -17,6 +17,8 @@ app.use(methodOverride("_method"))
 
 app.use(express.static("public"))
 app.use("/css", express.static("/public/css"))
+// app.use("/admin/css", express.static("/public/css"))
+// app.use("/admin/contestants", express.static("/public/css"))
 
 
 

@@ -4,7 +4,7 @@ dotenv.config()
 
 const URI = process.env.URI;
 // console.log(URI)
-mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
+mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }, (err) => {
     if (err) {
         throw err
         return
