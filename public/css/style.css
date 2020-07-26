@@ -535,6 +535,7 @@ footer .rights {
 
 .user-toggle {
   padding: 4px;
+  cursor: pointer;
 }
 .user-toggle > div {
   width: 20px;
@@ -548,6 +549,7 @@ footer .rights {
   font-size: 1.6rem;
   border-bottom: 1px solid gold;
   padding-bottom: 10px;
+  column-gap: 20px;
 }
 
 .fa.controls {
@@ -690,6 +692,18 @@ footer .rights {
 
   .container {
     padding: 10px 100px;
+  }
+
+  .contestants-details > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 120px;
+    row-gap: 50px;
+  }
+
+  .summary-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

@@ -50,49 +50,55 @@
             <div class="bread-crumbs"><a href="/">Dashboard</a></div>
         </header>
     </section>
-    <section class="container">
-        <div>
+    <div class="summary-board">
+        <section>
+            <section class="container">
+                <div>
 
 
-            <div>
-                <h3>icon</h3>
+                    <div>
+                        <h3>icon</h3>
 
-            </div>
-            <div>
-                Total Votes
-                <div><%= totalVotes %></div>
-            </div>
-        </div>
-    </section>
-    <section class="container">
-        <div>
+                    </div>
+                    <div>
+                        Total Votes
+                        <div><%= totalVotes %></div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div>
 
 
-            <div>
-                <i class="fa fa-star" aria-hidden="true"></i>
+                    <div>
+                        <i class="fa fa-star" aria-hidden="true"></i>
 
-            </div>
-            <div>
-                Number of contestants
-                <div><%= contestants.length %></div>
-            </div>
-        </div>
+                    </div>
+                    <div>
+                        Number of contestants
+                        <div><%= contestants.length %></div>
+                    </div>
+                </div>
 
-    </section>
+            </section>
 
-    <section class="container">
-        <div>
-            <div>
-                <i class="fa fa-star" aria-hidden="true"></i>
+            <section class="container">
+                <div>
+                    <div>
+                        <i class="fa fa-star" aria-hidden="true"></i>
 
-            </div>
-            <div>
-                Contestant wit highest vote
-                <div><%= contestants[0].name %></div>
-            </div>
-        </div>
+                    </div>
+                    <div>
+                        Contestant wit highest vote
+                        <div><%= contestants[0].name %></div>
+                    </div>
+                </div>
 
-    </section>
+            </section>
+        </section>
+        <div></div>
+        <div></div>
+    </div>
     <section class="contestants-details">
         <div>
             <% contestants.forEach(contestant=>{ %>
@@ -127,10 +133,3 @@
 </body>
 
 </html>
-<!-- <main style="margin-top: 120px;">
-    <form action="/admin/dashboard/contestants?_method=PUT" method="POST">
-        <input type="text" placeholder="Model id" name="id">
-        <input type="number" placeholder="Number of votes" name="newVotes">
-        <button type="submit">Add Vote</button>
-    </form>
-</main> -->

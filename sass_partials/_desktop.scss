@@ -132,5 +132,17 @@ $primary-color-2:#303030;
         padding: 10px 100px;
     }
 
+    .contestants-details>div{
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+     column-gap: 120px;
+     row-gap: 50px;
+    }
+
+    .summary-board{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 
 }
