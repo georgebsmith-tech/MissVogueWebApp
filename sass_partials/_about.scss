@@ -1,8 +1,9 @@
 $primary-color-1:gold;
 $primary-color-2:#303030;
+$primary-color-3:#141414;
 
 .about{
-    background: $primary-color-2;
+    background: $primary-color-3;
     font-size: 1.7rem;
     h2{
         padding: 3px 15px;
@@ -11,4 +12,10 @@ $primary-color-2:#303030;
         text-transform: capitalize;
         color: $primary-color-1;
     }
+}
+
+
+.landing-banner.the-about{
+    background-image: url(../images/landing_new1.jpeg);
+    background-position: top;
 }

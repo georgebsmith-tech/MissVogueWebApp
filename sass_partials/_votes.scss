@@ -14,6 +14,13 @@ $primary-color-2:#303030;
             width: 100%;
         }
     }
+    &>div>div{
+        text-align: center;
+        font-size: 3.5rem;
+        span{
+            color: $primary-color-1;
+        }
+    }
 
 }
 

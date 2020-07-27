@@ -1,8 +1,9 @@
 $primary-color-1:gold;
 $primary-color-2:#303030;
+$primary-color-3:#141414;
 .models{
     padding: 20px 10px;
-    background: $primary-color-2;
+    background: $primary-color-3;
     width: 100vw;
     
     .image-wrapper{
@@ -44,4 +45,10 @@ $primary-color-2:#303030;
 .top-model-details .more{
     height: 0;
     visibility: hidden;
+}
+
+.landing-banner.the-models{
+    background-image: url(../images/new-topmodel4.jpeg);
+    background-position: top;
+
 }

@@ -1,5 +1,7 @@
 $primary-color-1:gold;
 $primary-color-2:#303030;
+$primary-color-3:#141414;
+
 
 // main{
 // padding-top: 50px;
@@ -11,8 +13,8 @@ $primary-color-2:#303030;
 
 
 .landing-banner{
-    min-height:50vh ;
-    background-image: url(../images/banner2.jpg);
+    min-height:60vh ;
+    background-image: url(../images/landing_new2.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,6 +23,29 @@ $primary-color-2:#303030;
     z-index: -2;
     
     
+}
+
+.landing-caption{
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100vw;
+    font-weight: bolder;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    &>div:last-child{
+        font-size: 0.6em;
+        color: $primary-color-1;
+    }
+}
+.landing-banner::after{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0,0.6);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60vh;
 }
 
 .main-content{
@@ -35,7 +60,7 @@ $primary-color-2:#303030;
     width: 60vw;
     p{
         color: white;
-        background: rgba(0, 0, 0,0.3);
+        
         padding: 7px 7px 0px 7px;
     }
     
@@ -65,6 +90,7 @@ $primary-color-2:#303030;
 }
 body{
    font-family:'Open Sans', sans-serif;
+   background:$primary-color-3;
 }
 
 html{

@@ -144,5 +144,26 @@ $primary-color-2:#303030;
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .landing-banner::after{
+        
+        height: 120vh;
+    }
+
+    .landing-banner{
+        min-height:120vh ;
+        background-size:contain;
+    }
+
+    .landing-caption{
+        font-size: 7.5rem;
+        box-sizing: border-box;
+    }
+    
+    .contestants-wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        column-gap: 20px;
+    }
+
 
 }
