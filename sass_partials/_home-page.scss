@@ -61,6 +61,8 @@ $primary-color-3:#141414;
     img{
         display: block;
         width: 100%;
+        height: 100%;
+        object-fit: cover;
         
     }
 }
@@ -99,12 +101,46 @@ $primary-color-3:#141414;
 
 .testimonies{
     // height: 50vh;
+    padding-bottom: 30px;
     background: rgba(255, 215, 0,0.8);
+    overflow: hidden;
     article{
         padding: 10px 15px;
         font-size: 1.6rem;
+        color: white;
+    }
+
+    .by{
+        span:first-child{
+            font-weight: 400;
+            color: black;
+            text-transform: uppercase;
+        }
+        span:nth-child(2){
+            font-weight: 400;
+            color: white;
+        }
+    }
+    header{
+        h3{
+            font-size: 2.7rem;
+            color: black;
+        }
+        div{
+            font-size: 1.6rem;
+            color: rgb(241, 239, 239);
+        }
     }
     
+}
+.the-testimonies{
+    display: flex;
+    width: 300vw;
+
+}
+
+.a-testimony{
+    width: 100vw;
 }
 
 .quote{
@@ -121,4 +157,29 @@ $primary-color-3:#141414;
     }
     font-size: 1.5rem;
     
+}
+
+
+.partners-wrapper{
+    overflow: hidden;
+}
+.partners{
+    
+    background: $primary-color-3;
+    display: flex;
+    // justify-content: center;
+    width: 450vw;
+    overflow: hidden;
+
+}
+
+.partner{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    
+    img{
+        width:100%;
+    }
 }

@@ -3,6 +3,13 @@ const ContestantsModel = require("../models/contestantsModel");
 
 
 
+
+router.get("/login", async (req, res) => {
+
+    res.render("admin-login")
+})
+
+
 router.get("/dashboard", async (req, res) => {
     const contestants = await ContestantsModel.find().sort({ votes: -1 })
     let totalVotes = 0;

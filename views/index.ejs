@@ -92,21 +92,70 @@
         </div>
         <header>
             <h3 class="upper center-text">What people say</h3>
-            <div class="upper center-text"> &gt;About us &lt;</div>
+            <div class="upper center-text"> &gt; About us &lt;</div>
         </header>
-        <article class="center-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem beatae, perferendis a ea similique
-            obcaecati sunt optio ad nisi nihil velit asperiores dolore sequi tempore fugiat soluta unde voluptates sed?
-        </article>
-        <div class="by center-text">
-            <span>George, B Smith - </span><span>Developer</span>
+        <div class="the-testimonies">
+            <div class="a-testimony">
+                <article class="center-text">
+                    Miss Vogue Nigeria First Edition was a huge success, as the Galaxy360 brand was in conjunction with
+                    SOC
+                    ENTERTAINMENT SERVICES.
+                    As partners, we ensure every winner redeemed her prize as promised by the brand.
+                    Today, we can boldly say Miss Vogue Nigeria Beauty Pageant is one of the best beauty brand in our
+                    country
+                    Nigeria.
+                </article>
+                <div class="by center-text">
+                    <span>Stanley Dozie - </span><span>CEO GALAXY360 Media</span>
+                </div>
+            </div>
+            <div class="a-testimony">
+                <article class="center-text">
+                    Today, we join the world to celebrate Miss Vogue Nigeria beauty Pageant as one of the best beauty
+                    brand.
+                    Africa Update Newspapers was part of the sponsors for her second edition, breaking the norm and
+                    emerging
+                    a touch of excellence.
+                    Our work experience with the vogue team was awesome and we would love to experience their penchant
+                    for
+                    excellent anytime any day.
+                </article>
+                <div class="by center-text">
+                    <span>MRS Gloria Boma Harry - </span><span>CEO AFRICA UPDATE NEWSPAPER</span>
+                </div>
+            </div>
+            <div class="a-testimony">
+                <article class="center-text">
+                    Miss Vogue Nigeria First Edition was a huge success, as the Galaxy360 brand was in conjunction with
+                    SOC
+                    ENTERTAINMENT SERVICES.
+                    As partners, we ensure every winner redeemed her prize as promised by the brand.
+                    Today, we can boldly say Miss Vogue Nigeria Beauty Pageant is one of the best beauty brand in our
+                    country
+                    Nigeria.
+                </article>
+                <div class="by center-text">
+                    <span>Stanley Dozie - </span><span>CEO GALAXY360 Media</span>
+                </div>
+            </div>
         </div>
 
     </section>
+
+    <div class="partners-wrapper">
+        <section class="partners">
+            <% for(let i=1;i<=18;i++){ %>
+            <div class="partner">
+                <img src="../images/partner<%= i %>.jpeg" alt="image of our partner">
+            </div>
+            <% } %>
+        </section>
+    </div>
 
 
 
 </main>
 <script src="../js/home.js"></script>
+<script src="../js/testimonies.js"></script>
 
 <%- include('./partials/footer.ejs') %>

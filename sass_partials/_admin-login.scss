@@ -1,0 +1,42 @@
+$primary-color-1:gold;
+$primary-color-2:#303030;
+$primary-color-3:#141414;
+
+.login{
+    background: rgba(0, 0, 0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 30px 15px;
+
+    .caption{
+        margin-bottom: 20px;
+    }
+    fieldset{
+        width: 100%;
+        margin-bottom: 20px;
+        border: none;
+    }
+    input,button{
+        width: 100%;
+        padding: 12px;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        font-size: 1.7rem;
+    }
+    button{
+        background: $primary-color-2;
+        border: 1px solid $primary-color-2;
+        color: white;
+    }
+}
+
+.form-wrapper{
+    width: 100%;
+    border: 1px solid $primary-color-1;
+    padding: 20px;
+    border-radius: 4px;
+
+}
