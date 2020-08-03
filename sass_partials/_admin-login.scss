@@ -9,6 +9,7 @@ $primary-color-3:#141414;
     align-items: center;
     width: 100vw;
     padding: 30px 15px;
+    height: 100vh;
 
     .caption{
         margin-bottom: 20px;
@@ -38,5 +39,6 @@ $primary-color-3:#141414;
     border: 1px solid $primary-color-1;
     padding: 20px;
     border-radius: 4px;
+    max-width: 500px;
 
 }

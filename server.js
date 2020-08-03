@@ -4,6 +4,9 @@ const methodOverride = require("method-override")
 const ContestantsModel = require("./models/contestantsModel");
 
 const adminRoutes = require("./controlers/adminRoutes");
+const contestantsAPI = require("./routes/api/contestantsRoutes")
+
+const adminAPI = require("./routes/api/adminRoutes")
 
 
 app.set("view engine", "ejs")
@@ -46,6 +49,9 @@ app.get("/votes", async (req, res) => {
 })
 
 
+
+app.use("/api/contestants", contestantsAPI)
+app.use("/api/admin", adminAPI)
 app.use("/admin", adminRoutes)
 
 

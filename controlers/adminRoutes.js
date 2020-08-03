@@ -1,7 +1,7 @@
 const router = require("express").Router()
 const ContestantsModel = require("../models/contestantsModel");
 
-
+const adminAuthenticated = require("../middleware/admin-auth-check")
 
 
 router.get("/login", async (req, res) => {
@@ -11,7 +11,7 @@ router.get("/login", async (req, res) => {
 
 
 router.get("/dashboard", async (req, res) => {
-    const contestants = await ContestantsModel.find().sort({ votes: -1 })
+    const contestants = await ContestantsModel.find()
     let totalVotes = 0;
     contestants.forEach(contestant => {
         totalVotes += contestant.votes

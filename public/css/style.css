@@ -645,7 +645,12 @@ footer .rights {
   font-size: 1.6rem;
   border-bottom: 1px solid gold;
   padding-bottom: 10px;
-  column-gap: 20px;
+}
+.contestant .image-wrapper {
+  width: 100%;
+}
+.contestant .image-wrapper img {
+  width: 100%;
 }
 
 .fa.controls {
@@ -676,6 +681,7 @@ footer .rights {
   align-items: center;
   width: 100vw;
   padding: 30px 15px;
+  height: 100vh;
 }
 .login .caption {
   margin-bottom: 20px;
@@ -704,6 +710,7 @@ footer .rights {
   border: 1px solid gold;
   padding: 20px;
   border-radius: 4px;
+  max-width: 500px;
 }
 
 @media only screen and (min-width: 769px) {

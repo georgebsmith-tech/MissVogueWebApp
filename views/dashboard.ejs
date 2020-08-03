@@ -101,10 +101,10 @@
     </div>
     <section class="contestants-details">
         <div>
-            <% contestants.forEach(contestant=>{ %>
+            <% contestants.forEach((contestant,i)=>{ %>
             <div class="center-text contestant">
-                <div>
-
+                <div class="image-wrapper">
+                    <img src="../images/cont<%= i+1 %>.jpeg" alt="">
                 </div>
                 <div>
                     <h3><a href="/admin/<%= contestant.name %>">Name:
