@@ -35,7 +35,7 @@ const Schema = new mongoose.Schema({
         type: String,
         default: "None"
     },
-    id: {
+    contestant_id: {
         type: String
     }
 

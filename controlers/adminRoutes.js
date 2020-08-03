@@ -25,7 +25,7 @@ router.get("/dashboard", async (req, res) => {
 //     res.render("dashboard")
 // })
 
-router.post("/dashboard/contestants", async (req, res) => {
+router.post("/contestants", async (req, res) => {
     const contestant = new ContestantsModel(req.body)
     const data = await contestant.save()
     res.status(200).json({

@@ -22,9 +22,9 @@
     </section>
     <section class="contestants container">
         <div class="contestants-wrapper">
-            <% contestants.forEach(contestant=>{ %>
+            <% contestants.forEach((contestant,i)=>{ %>
             <div class="image-wrapper">
-                <img src="../images/contestant1.jpeg" alt="">
+                <img src="../images/cont<%= i+1 %>.jpeg" alt="">
                 <div>
                     <span><%= contestant.votes %></span> Votes
                 </div>
