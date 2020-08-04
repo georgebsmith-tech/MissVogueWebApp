@@ -38,13 +38,7 @@ router.get("/dashboard", checkAdminAuthenticated, async (req, res) => {
 //     res.render("dashboard")
 // })
 
-router.post("/contestants", checkAdminAuthenticated, async (req, res) => {
-    const contestant = new ContestantsModel(req.body)
-    const data = await contestant.save()
-    res.status(200).json({
-        body: data
-    })
-})
+
 
 
 router.put("/dashboard/contestants/:id", async (req, res) => {
