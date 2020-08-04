@@ -3,14 +3,27 @@ const ContestantsModel = require("../models/contestantsModel");
 
 const adminAuthenticated = require("../middleware/admin-auth-check")
 
+const passport = require("passport")
 
-router.get("/login", async (req, res) => {
+const checkAdminAuthenticated = require("../middleware/authenticated")
+
+const checkNotAuthenticated = require("../middleware/notAuthenticated")
+
+
+router.get("/login", checkNotAuthenticated, async (req, res) => {
 
     res.render("admin-login")
 })
 
+router.post("/login", passport.authenticate("local", {
+    successRedirect: "/admin/dashboard",
+    failureRedirect: "/admin/login",
+    failureFlash: true
 
-router.get("/dashboard", async (req, res) => {
+}))
+
+
+router.get("/dashboard", checkAdminAuthenticated, async (req, res) => {
     const contestants = await ContestantsModel.find()
     let totalVotes = 0;
     contestants.forEach(contestant => {
@@ -25,7 +38,7 @@ router.get("/dashboard", async (req, res) => {
 //     res.render("dashboard")
 // })
 
-router.post("/contestants", async (req, res) => {
+router.post("/contestants", checkAdminAuthenticated, async (req, res) => {
     const contestant = new ContestantsModel(req.body)
     const data = await contestant.save()
     res.status(200).json({

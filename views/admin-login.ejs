@@ -9,15 +9,15 @@
         <div class="form-wrapper">
             <h1 class="upper center-text caption">Admin Login</h1>
             <div>
-                <form action="">
+                <form action="/admin/login" method="POST">
                     <fieldset>
-                        <input type="text" name="username" placeholder="Username">
+                        <input type="text" name="name" placeholder="Username" id="username">
                     </fieldset>
                     <fieldset>
-                        <input type="password" name="password" placeholder="Password">
+                        <input type="password" name="password" placeholder="Password" id="password">
                     </fieldset>
                     <fieldset>
-                        <button type="submit">Login</button>
+                        <button type="submit" class="admin-login-btn">Login</button>
                     </fieldset>
                 </form>
             </div>
@@ -25,9 +25,14 @@
     </section>
 
 </main>
+<form action="/admin/dashboard" method="POST">
+    <input type="hidden" name="token" value="" id="token">
+    <button type="submit" class="admin-dashboard-btn"></button>
+</form>
+<!-- <a href="/admin/dashboard" class="admin-dashboard-btn"></a> -->
 <script src="../js/nav.js"></script>
 <script src="../js/lookbook.js"></script>
-<script src="../js/admin-login.js"></script>
+<!-- <script src="../js/admin-login.js"></script> -->
 
 </body>
 
