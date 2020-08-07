@@ -18,7 +18,6 @@ const Schema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
-        unique: true
     },
     image_url: {
         type: String
@@ -36,7 +35,9 @@ const Schema = new mongoose.Schema({
         default: "None"
     },
     contestant_id: {
-        type: String
+        type: String,
+        unique: true,
+        required: true
     }
 
 })
