@@ -21,6 +21,11 @@ router.post("/login", passport.authenticate("local", {
     failureFlash: true
 
 }))
+router.get("/contestants", async (req, res) => {
+    const contestant = await ContestantsModel.find({ })
+    res.status(200).json({ contestant })
+
+})
 
 
 router.get("/dashboard", checkAdminAuthenticated, async (req, res) => {
