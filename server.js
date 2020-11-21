@@ -1,4 +1,5 @@
 const express = require("express")
+// const cors = require("cors")
 
 const passport = require("passport")
 const flash = require("express-flash")
@@ -16,7 +17,17 @@ const contestantsAPI = require("./routes/api/contestantsRoutes")
 
 const adminAPI = require("./routes/api/adminRoutes")
 
+// app.use(cors())
 
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*")
+    res.header("Access-Control-Allow-Headers", "*")
+    if (req.method === "OPTIONS") {
+        res.header("Access-Control-Allow-Methods", 'GET')
+        return res.status(200).json({})
+    }
+    next()
+})
 
 app.use(flash())
 app.use(session({
